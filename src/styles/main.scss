@@ -1,20 +1,31 @@
 @use 'header';
 @use 'variaveis';
+@use 'hero';
+@use 'movies';
 
 @font-face {
     font-family: 'Bebas Neue';
     src: url('../../assets/BebasNeue-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Transformers Movie';
+    src: url('../../assets/Transformers\ Movie.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue';
 }
 
 body {
     background-color: variaveis.$corDeFundo;
+}
+
+@mixin title ($fontSize: 48px) {
+    font-size: $fontSize;
+    color: variaveis.$corTextoPrincipal;
 }
 
 @mixin links ($fontSize: 24px) {
@@ -25,4 +36,8 @@ body {
 //16px
 .links {
     @include links;
+}
+
+.title {
+    @include title;
 }
