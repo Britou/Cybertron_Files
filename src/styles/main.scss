@@ -2,6 +2,9 @@
 @use 'variaveis';
 @use 'hero';
 @use 'movies';
+@use 'curiosities';
+@use 'watch';
+@use 'footer';
 
 @font-face {
     font-family: 'Bebas Neue';
@@ -23,21 +26,48 @@ body {
     background-color: variaveis.$corDeFundo;
 }
 
-@mixin title ($fontSize: 48px) {
+@mixin text ($fontSize: 12px) {
     font-size: $fontSize;
-    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title ($fontSize: 32px) {
+    font-size: $fontSize;
 }
 
 @mixin links ($fontSize: 24px) {
     font-size: $fontSize;
-    color: variaveis.$corTextoPrincipal;
     text-decoration: none;
+    color: variaveis.$corLinks;
 }
-//16px
-.links {
+
+.text--big {
+    @include text (16px);
+    font-family: 'bebas neue';
+}
+
+.text {
+    @include text;
+}
+
+.links-text {
     @include links;
+
+    &:hover {
+        color: variaveis.$corLinksHover;
+    }
+}
+
+.title--big {
+    @include title (48px);
+    font-family: 'bebas neue';
 }
 
 .title {
     @include title;
+    
+}
+
+.title--small {
+    @include title (24px);
+    font-family: 'bebas neue';
 }

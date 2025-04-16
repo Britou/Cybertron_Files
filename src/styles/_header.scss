@@ -1,16 +1,23 @@
 @use 'variaveis';
 
 .header {
-    position: sticky;
-    background-color: #ef0808;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     transition: background-color .5s ease;
-    background: linear-gradient(
-        to top, 
-        transparent 0%, 
-        transparent 30%, 
-        #111219 55%, 
-        #111219 100%
-        );
+    background: linear-gradient(to top, transparent 0%, transparent 30%, #111219 55%, #111219 100%);
+    z-index: 500;
+
+    @media (max-width: 768px) {
+        background: #111219;
+    }
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color .5s ease;
+    }
         
         &__container {
             display: flex;
@@ -20,12 +27,37 @@
             flex-wrap: wrap; 
             font-family: 'Bebas Neue';
 
+            @media (max-width: 768px) {
+                justify-content: space-between;
+                position: relative;
+            }
+
         }
         
         &__logo {
             max-width: 80px;
             width: 100%;
             margin: 5px;
+            align-self: center;
+
+            @media (max-width: 768px) {
+                
+            }
+        }
+
+        &__menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            order: 1;
+
+            @media (max-width: 768px) {
+                display: block;
+                margin: 10px;
+            }
         }
         
         &__links {
@@ -37,5 +69,55 @@
             list-style: none;
             gap: 96px;
             margin: 32px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+
+            @media (max-width: 768px) {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #111219;
+                flex-direction: column;
+                gap: 0;
+                margin: 0;
+                padding: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                opacity: 1;
+                pointer-events: auto;
+    
+                &.is-active {
+                    max-height: 100vh;
+                    padding: 20px 0;
+                }
+    
+                &__item {
+                    padding: 15px 20px;
+                    text-align: center;
+                    border-bottom: 1px solid rgba(255,255,255,0.1);
+                }
+            }
         }
+
+        &:hover {
+            .header__links {
+            opacity: 1;
+            pointer-events: auto;
+
+                @media (min-width: 769px) {
+                    &:hover .header__links {
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+
     }
+    
+.header--is-hidden {
+    top: -100px;
+}

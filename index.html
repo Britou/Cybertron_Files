@@ -5,55 +5,297 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybertron Files</title>
     <link rel="stylesheet" href="dist/css/main.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="./dist/images/Group.png">
 
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <ul class="header__links">
-                <li class="header__link__item">
-                    <a class="links" href="#">O universo</a>
-                </li">
-                <li class="header__link__item">
-                    <a class="links" href="#">Filmes</a>
-                </li>
-            </ul>
+            <button class="header__menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <h1>
-                <img class="header__logo" src="src/images/Group.png" alt="Logo dos Autobots e Decepticons">
+                <img class="header__logo" src="./dist/images/Group.png" alt="Logo">
             </h1>
             <ul class="header__links">
-                <li class="header__link__item">
-                    <a class="links" href="#">Curiosidades</a>
+                <li class="header__links__item">
+                    <a class="links-text" href="#hero">O universo</a>
                 </li>
-                <li class="header__link__item">
-                    <a class="links" href="#">Onde assistir</a>
+                <li class="header__links__item">
+                    <a class="links-text" href="#movies">Filmes</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="links-text" href="#curiosities">Curiosidades</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="links-text" href="#watch">Onde assistir</a>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero__content">
-        <h3 class="title"> <span>O Universo</span> Transformers</h3>
-        <p>
-            A franquia Transformers narra a guerra milenar entre os nobres Autobots e os tirânicos Decepticons,
-            robôs alienígenas de Cybertron que se transformam em máquinas. Em busca de artefatos como o AllSpark 
-            e o Energon, sua batalha se estende à Terra, onde humanos como Sam Witwicky e Cade Yeager se unem aos 
-            Autobots contra vilões como Megatron, The Fallen e o devorador Unicron. Com explosivas sequências de ação, 
-            mitologia rica e robôs icônicos como Optimus Prime e Bumblebee, a saga explora temas como honra, tecnologia e 
-            sobrevivência, expandindo-se para séries, jogos e quadrinhos. No cerne, é um conflito cósmico entre o bem e o 
-            mal, onde máquinas refletem as complexidades da natureza humana.
-        </p>
+            <h3 class="title--big"> <span>O Universo</span> Transformers</h3>
+                <p>
+                    A franquia Transformers narra a guerra milenar entre os nobres Autobots e os tirânicos Decepticons,
+                    robôs alienígenas de Cybertron que se transformam em máquinas. Em busca de artefatos como o AllSpark 
+                    e o Energon, sua batalha se estende à Terra, onde humanos como Sam Witwicky e Cade Yeager se unem aos 
+                    Autobots contra vilões como Megatron, The Fallen e o devorador Unicron. Com explosivas sequências de ação, 
+                    mitologia rica e robôs icônicos como Optimus Prime e Bumblebee, a saga explora temas como honra, tecnologia e 
+                    sobrevivência, expandindo-se para séries, jogos e quadrinhos. No cerne, é um conflito cósmico entre o bem e o 
+                    mal, onde máquinas refletem as complexidades da natureza humana.
+                </p>
         </div>
     </section>
-    <section class="movies">
+    <section id="movies" class="movies">
         <div class="movies__content">
             <div class="movies__description">
-
+                <h1 class="title--big">Filmes</h1>
+                <p class="text--big">
+                    A franquia Transformers, dirigida por Michael Bay, revolucionou o cinema de blockbuster quando seu primeiro filme foi lançado em 2007.
+                    Combinando efeitos visuais inovadores, ação espetacular e uma narrativa repleta de robôs gigantes, a série elevou os padrões da indústria
+                    cinematográfica, especialmente no que diz respeito à CGI e às sequências de batalhas hiperdinâmicas. 
+                    Bay transformou os icônicos brinquedos da Hasbro em um espetáculo visual jamais visto, influenciando uma geração de filmes de ficção 
+                    científica e ação com sua estética vibrante, edição frenética e uso intenso de motion capture.
+                </p>
+                <img src="./dist/images/Vector.png" alt="">
             </div>
-            <div class="movies__carousel">
-
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="./dist/images/Transformers1.jpg" alt="">
+                            <div class="swiper-texto">
+                                <h1 class="title">Transformers - 2007</h1>
+                                <p class="text--big">
+                                    Durante anos os Autobots e os Decepticons, duas raças alienígenas robóticas, duelaram em Cybertron, seu planeta natal.
+                                    Esta guerra fez com que o planeta fosse destruído, resultando que os robôs se espalhassem pelo universo. Megatron, 
+                                    o líder dos Decepticons, vem à Terra em busca da Allspark, um cubo de Cybertron que possibilita que qualquer aparelho eletrônico 
+                                    seja transformado num robô com inteligência própria. Megatron encontra a Allspark, mas fica congelado no Ártico. Décadas depois outros 
+                                    Decepticons chegam à Terra, numa tentativa de encontrar a Allspark. Seu surgimento logo alerta os principais países, em especial os Estados Unidos, 
+                                    que tem uma base militar no Qatar atacada. Enquanto o Secretário de Defesa John Keller tenta descobrir o que está havendo, reunindo 
+                                    todas as forças e informações possíveis, o jovem Sam Witwicky tem preocupações mais simples: conseguir uma boa nota no colégio, o que 
+                                    lhe garantirá seu 1º carro. Mas o que ele não esperava era que o veículo escolhido, um Camaro antigo, tinha vida própria.
+                                </p>
+                                <div class="stars">
+                                    <h3>Avaliação:</h3>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="./dist/images/Transformers2.jpg" alt="">
+                            <div class="swiper-texto">
+                                <h1 class="title">Transformers: A Vingança dos Derrotados</h1>
+                                <p class="text--big">
+                                    Dois anos após a batalha entre os Autobots e os Decepticons, Sam Witwicky enfrenta a ansiedade de entrar
+                                    na faculdade. Isto significa que ele terá que morar separado de seus pais, Judy e Ron, deixar a
+                                    namorada Mikaela Banes  e ainda explicar a situação ao seu amigo e protetor Bumblebee, já que pretende levar uma
+                                    vida normal de agora em diante. Paralelamente o governo desativa o Setor 7, resultando na demissão do agente Simmons. 
+                                    Em seu lugar é criada a NEST, uma agência comandada pelo capitão Lennox  e o sargento Epps , que trabalha em conjunto 
+                                    com os Autobots. Porém a NEST enfrenta a resistência de Theodore Galloway, o consultor da segurança nacional, que a considera supérflua.
+                                </p>
+                                <div class="stars">
+                                    <h3>Avaliação:</h3>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="./dist/images/Transformers3.jpg" alt="">
+                            <div class="swiper-texto">
+                                <h1 class="title">Transformers: O Lado Oculto da Lua</h1>
+                                <p class="text--big">
+                                    Os Autobots, liderados por Optimus Prime, participam de missões secretas ao lado dos humanos, 
+                                    onde tentam exterminar os Decepticons existentes no planeta. Um dia Optimus descobre que os humanos lhe esconderam 
+                                    algo ocorrido no lado oculto da Lua. Trata-se da queda de uma espaçonave vinda de Cyberton, comandada por Sentinel 
+                                    Prime, que desencadeou a corrida espacial entre Estados Unidos e União Soviética na década de 60. Os 
+                                    Autobots resolvem ir à Lua para resgatar o antigo líder, além das cápsulas que ainda estão no local. Paralelamente, Sam 
+                                    Witwicky vive com sua nova namorada, Carly, e está à procura de emprego. Ele sente-se diminuído, já que salvou o planeta 
+                                    duas vezes e ganhou uma medalha do presidente Barack Obama, mas nada disto 
+                                    parece ajudá-lo a se estabelecer no mercado de trabalho. Para piorar, Carly ganha bem e é assediada pelo chefe, o bilionário 
+                                    Dylan Gould . Pouco depois de enfim conseguir emprego, Sam recebe uma mensagem de Jerry, que 
+                                    trabalha no mesmo lugar. Jerry trabalhou na NASA durante a corrida espacial e agora é chantageado pelos Decepticons, que o 
+                                    matam. O fato faz com que Sam procure mais uma vez os Autobots, mas apesar de seus feitos do passado ele encontra resistência
+                                    da nova comandante, Marissa Faireborn.
+                                </p>
+                                <div class="stars">
+                                    <h3>Avaliação:</h3>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="./dist/images/Transformers4.jpg" alt="">
+                            <div class="swiper-texto">
+                                <h1 class="title">Transformers: A Era da Extinção</h1>
+                                <p class="text--big">
+                                    Alguns anos se passaram desde o grande confronto entre Autobots e Decepticons em Chicago. 
+                                    Os gigantescos robôs alienígenas desapareceram e são atualmente caçados pelos humanos, especialmente 
+                                    uma divisão da CIA que os enxergam como hostis e perigosos. Com planos suspeitos, a missão da Inteligência 
+                                    Americana, chefiada por Harold Attinger, parece estar usando a tecnologia dos robôs mortos 
+                                    para criar armas superpoderosas. Quando Cade encontra um caminhão abandonado, ele jamais poderia 
+                                    imaginar que o veículo é na verdade Optimus Prime, o líder dos Autobots. Muito menos que, ao ajudar a trazê-lo de 
+                                    volta à vida, Cade e sua filha Tessa entrariam na mira das autoridades americanas.
+                                </p>
+                                <div class="stars">
+                                    <h3>Avaliação:</h3>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="./dist/images/Transformers5.jpg" alt="">
+                            <div class="swiper-texto">
+                                <h1 class="title">Transformers: O Último Cavaleiro</h1>
+                                <p class="text--big">
+                                    Os humanos estão em guerra com os Transformers, que precisam se esconder na medida do possível. 
+                                    Cade Yeager é um de seus protetores, liderando um núcleo de resistência situado em um ferro-velho. 
+                                    É lá que conhece Izabella, uma garota de 15 anos que luta para proteger um pequeno robô defeituoso. 
+                                    Paralelamente, Optimus Prime viaja pelo universo rumo a Cybertron, seu planeta-natal, de forma a entender o porquê 
+                                    dele ter sido destruído. Só que, na Terra, Megatron se prepara para um novo retorno, mais uma vez disposto a tornar os 
+                                    Decepticons os novos soberanos do planeta.
+                                </p>
+                                <div class="stars">
+                                    <h3>Avaliação:</h3>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <section id="curiosities" class="curiosities">
+        <div class="curiosities__content">
+            <h1 class="title--big">Curiosidades</h1>
+            <div class="curiosities__grid">
+                <div class="card curiosities__card--cybertron">
+                    <div class="card__content">
+                        <p class="title--small">Planeta Natal</p>
+                        <p class="text--big">
+                            Cybertron era um planeta tecnológico avançado, alimentado por Energon, 
+                            a principal fonte de energia dos Transformers. A sociedade viveu tempos de paz e progresso, 
+                            até ser destruída por uma guerra civil entre Autobots e Decepticons.
+                        </p>
+                    </div>
+                </div>
+                <div class="card curiosities__card--autobotsDecepticons">
+                    <div class="card__content">
+                        <p class="title--small">Autobots vs Decepticons</p>
+                        <p class="text--big">
+                            A guerra começou quando os Decepticons, liderados por Megatron, tentaram tomar o poder à força. 
+                            Os Autobots, guiados por Optimus Prime, resistiram para proteger a liberdade de Cybertron. 
+                            O conflito deu inicio a uma batalha que se espalhou por todo o universo.
+                        </p>
+                    </div>
+                </div>
+                <div class="card curiosities__card--origin">
+                    <div class="card__content">
+                        <p class="title--small">Primórdios</p>
+                        <p class="text--big">
+                            Os Transformers nasceram no Japão! Eles surgiram das linhas
+                            de brinquedos Diaclone e Micro Change, criadas pela empresa
+                            Takara no início dos anos 1980. Que mais tarde seriam rebatizados
+                            como Autobots e Decepticons.
+                        </p>
+                    </div>
+                </div>
+                <div class="card curiosities__card--toys">
+                    <div class="card__content">
+                        <p class="title--small">Mercado de Brinquedos</p>
+                        <p class="text--big">
+                            Desde seu lançamento em 1984, os brinquedos Transformers se tornaram um fenômeno global. 
+                            Combinando ação, transformação e storytelling, a linha vendeu milhões de unidades em todo o mundo. 
+                            A marca é uma das mais lucrativas da Hasbro, impulsionada por desenhos animados, filmes, quadrinhos e games. 
+                            Além do público infantil, os Transformers também conquistaram colecionadores adultos, com edições especiais e 
+                            réplicas detalhadas, mantendo o sucesso por gerações.
+                        </p>
+                    </div>
+                </div>
+                <div class="card curiosities__card--series">
+                    <div class="card__content">
+                        <p class="title--small">Múltiplas Séries</p>
+                        <p class="text--big">
+                            A franquia Transformers se expandiu para diversas mídias. Começou com os filmes live-action de Michael Bay 
+                            (2007–atualmente), seguidos por Bumblebee (2018), com tom mais emocional. Nos desenhos, iniciou com G1 (1984), 
+                            seguido por Beast Wars (1996) e outras como Armada (2002) e Cybertron (2005). Nos quadrinhos, começou com a Marvel 
+                            Comics e foi continuada pela IDW Publishing, aprofundando a guerra entre Autobots e Decepticons.
+                        </p>
+                    </div>
+                </div>
+                <div class="card curiosities__card--surprises">
+                    <div class="card__content">
+                        <p class="title--small">Alianças Surpreendentes</p>
+                        <p class="text--big">
+                            Em uma dessas ocasiões, durante a Crise de Thunderwing, um Decepticon que se transforma em um monstro, 
+                            Optimus Prime e Megatron unem forças para enfrentar a ameaça. Apesar de suas diferenças, ambos lideram suas tropas, incluindo 
+                            Trypticon e Omega Supreme, em uma batalha conjunta. Após a vitória, eles discutem sobre os próximos passos, com Megatron sugerindo 
+                            medidas extremas, mas sendo contido por Optimus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="watch" class="watch">
+        <div class="watch__content">
+            <h1 class="title--big">Onde assistir?</h1>
+            <p class="text--big">
+                Quer saber onde assistir à incrível franquia Transformers de Michael Bay? Você pode encontrar todos os 
+                filmes em plataformas de streaming como HBO Max, Star+, Netflix, Amazon Prime Video, e Globoplay. 
+                Prepare-se para uma maratona cheia de ação e efeitos especiais!
+            </p>
+            <div class="watch__links">
+                <a href="https://www.hbo.com/br/series/transformers" target="_blank">
+                    <img src="./dist/images/hbo-logo.svg" alt="HBO">
+                </a>
+                <a href="https://www.starplus.com/series/transformers" target="_blank">
+                    <img src="./dist/images/star-plus.svg" alt="Star+">
+                </a>
+                <a href="https://www.netflix.com/br/title/70153404" target="_blank">
+                    <img src="./dist/images/netflix-logo-icon.svg" alt="Netflix">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="text--big">© Todos os direitos reservados - Desenvolvido por <a class="links-text" href="https://github.com/Britou" target="_blank">Raphael Alves Brito</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
 </html>
